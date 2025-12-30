@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import DragDropList from "./components/DragAndDrop";
+import ProgressBar from "./components/Progressbar";
+import EnterKeyInput from "./components/keyDetection";
+
+import "./App.css";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ maxWidth: 400, margin: "40px auto" }}>
+      <h2
+        style={{ fontFamily: "sans-serif", margin: "20px", color: "#00008B" }}
+      >
+        Re-Order Items
+      </h2>
+      <DragDropList />
+      <ProgressBar />
+      <EnterKeyInput />
     </div>
   );
-}
+};
 
 export default App;

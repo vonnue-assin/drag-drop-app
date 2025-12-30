@@ -1,0 +1,14 @@
+.text {
+  padding: 10px 20px;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(181, 172, 172);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
