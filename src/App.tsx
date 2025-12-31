@@ -7,6 +7,7 @@ import DynamicList from "./components/EventDelegation";
 import EnterKeyInput from "./components/keyDetection";
 import PersistentCounter from "./components/LocalStorageCounter";
 import ProgressBar from "./components/Progressbar";
+import ShoppingCart from "./components/ShoppingCart";
 
 import "./App.css";
 
@@ -25,6 +26,7 @@ const App: React.FC = () => {
       <DynamicList />
       <FormExample />
       <PersistentCounter />
+      <ShoppingCart />
     </div>
   );
 };
