@@ -1,20 +1,21 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 import "./styles.css";
 
-const EnterKeyInput = () => {
-  const [value, setValue] = useState<string>("");
+const EnterKeyInput: React.FC = () => {
+  const [value, setValue] = useState("");
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      alert(`You pressed Enter.value:${value}`);
+    if (e.key === "Enter" && value.trim()) {
+      toast.success(`You pressed Enter. Value: ${value}`);
       setValue("");
     }
   };
+
   return (
     <div className="flex">
       <input
-        type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={handleKeyDown}

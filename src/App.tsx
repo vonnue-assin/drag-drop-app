@@ -1,6 +1,9 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
 
+import FormExample from "./components/DefaultBehaviour";
 import DragDropList from "./components/DragAndDrop";
+import DynamicList from "./components/EventDelegation";
 import ProgressBar from "./components/Progressbar";
 import EnterKeyInput from "./components/keyDetection";
 
@@ -17,6 +20,9 @@ const App: React.FC = () => {
       <DragDropList />
       <ProgressBar />
       <EnterKeyInput />
+      <ToastContainer position="top-right" autoClose={2000} />
+      <DynamicList />
+      <FormExample />
     </div>
   );
 };
