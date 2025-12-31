@@ -4,8 +4,9 @@ import { ToastContainer } from "react-toastify";
 import FormExample from "./components/DefaultBehaviour";
 import DragDropList from "./components/DragAndDrop";
 import DynamicList from "./components/EventDelegation";
-import ProgressBar from "./components/Progressbar";
 import EnterKeyInput from "./components/keyDetection";
+import PersistentCounter from "./components/LocalStorageCounter";
+import ProgressBar from "./components/Progressbar";
 
 import "./App.css";
 
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       <ToastContainer position="top-right" autoClose={2000} />
       <DynamicList />
       <FormExample />
+      <PersistentCounter />
     </div>
   );
 };

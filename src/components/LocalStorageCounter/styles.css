@@ -1,0 +1,36 @@
+.center {
+  text-align: center;
+}
+
+.header {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: rgb(3, 3, 85);
+  margin-top: 36px;
+}
+
+.count {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.set-button {
+  border: none;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-radius: 10px;
+}
+
+.button-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}

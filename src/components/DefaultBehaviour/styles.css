@@ -1,5 +1,6 @@
 .form .flex {
   margin-top: 12px;
+  font-size: 18px;
 }
 
 .form {
@@ -7,11 +8,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.input {
-  padding-left: 20px;
-  padding-top: 8px;
 }
 
 .label {
