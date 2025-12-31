@@ -1,9 +1,10 @@
-.button-card {
+.button-cards {
   display: flex;
   flex-direction: row;
   gap: 15px;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 }
 
 .cart-card .set-button {
@@ -69,4 +70,11 @@
   padding-bottom: 5px;
   border-radius: 10px;
   font-size: 16px;
+  margin-top: 30px;
+}
+
+.empty {
+  font-family: serif;
+  font-size: 18px;
+  color: rgb(5, 5, 116);
 }

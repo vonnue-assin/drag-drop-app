@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 
 import "./styles.css";
 
@@ -24,10 +25,16 @@ const ShoppingCart = () => {
     setCart([]);
     sessionStorage.removeItem("cart");
   };
+
+  const showTotalItems = () => {
+    toast.success(`Total items in cart: ${cart.length}`);
+  };
+
   return (
     <div className="cart-card">
       <h2 className="header">Shopping Cart</h2>
-      <div className="button-card">
+
+      <div className="button-cards">
         <button className="set-button" onClick={() => addToCart("Apple")}>
           Add Apple
         </button>
@@ -37,12 +44,15 @@ const ShoppingCart = () => {
         <button className="set-button" onClick={() => addToCart("Orange")}>
           Add Orange
         </button>
+        <button className="set-button" onClick={showTotalItems}>
+          Show Total Items
+        </button>
       </div>
 
       <h3 className="cart-items">Cart Items</h3>
 
       {cart.length === 0 ? (
-        <p>Cart is empty</p>
+        <p className="empty">Cart is empty</p>
       ) : (
         <ul>
           {cart.map((item, index) => (

@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <DragDropList />
       <ProgressBar />
       <EnterKeyInput />
-      <ToastContainer position="top-right" autoClose={2000} />
+      <ToastContainer position="top-right" autoClose={5000} />
       <DynamicList />
       <FormExample />
       <PersistentCounter />
