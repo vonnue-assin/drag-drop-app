@@ -1,0 +1,30 @@
+.photo-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.photo-container {
+  max-width: 100%;
+  margin: 0 auto;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  box-sizing: border-box;
+}
+
+.photo-card {
+  flex: 0 0 auto;
+  width: 200px;
+}

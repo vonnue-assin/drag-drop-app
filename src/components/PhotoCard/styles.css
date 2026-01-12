@@ -1,0 +1,30 @@
+.photo-card {
+  flex-shrink: 0;
+  width: 300px;
+  scroll-snap-align: start;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.movie-image {
+  width: 104%;
+  height: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.photo-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.title,
+.vote {
+  color: #fff;
+}
