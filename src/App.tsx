@@ -1,7 +1,7 @@
 import React from "react";
 import { ToastContainer } from "react-toastify";
 
-import Calendar from "./components/Calender";
+import Calendar from "./components/Calender/index";
 import FormExample from "./components/DefaultBehaviour";
 import DragDropList from "./components/DragAndDrop";
 import EventBubblingDemo from "./components/EventBubblingDemo";

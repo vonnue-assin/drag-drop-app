@@ -6,6 +6,8 @@ export const getFirstDayOfMonth = (year: number, month: number) => {
   return new Date(year, month + 1).getDay();
 };
 
+console.log(getFirstDayOfMonth(2026, 1));
+
 export const DAYS_OF_WEEK = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 export const MONTHS = [

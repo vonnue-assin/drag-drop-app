@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 import {
+  DAYS_OF_WEEK,
   getDaysInMonth,
   getFirstDayOfMonth,
-  DAYS_OF_WEEK,
   MONTHS,
 } from "../../utils/calender";
 
@@ -14,6 +14,7 @@ const Calendar = () => {
 
   const year = viewDate.getFullYear();
   const month = viewDate.getMonth();
+
   const daysInMonth = getDaysInMonth(year, month);
   const firstDayIndex = getFirstDayOfMonth(year, month);
 
@@ -23,9 +24,9 @@ const Calendar = () => {
 
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>CALENDER</h1>
+      <h2 className="header-calender">CALENDER</h2>
       <div
-        className="calendar-container"
+        className="calender-container"
         style={{
           maxWidth: "400px",
           margin: "auto",
@@ -40,32 +41,41 @@ const Calendar = () => {
             marginBottom: "10px",
           }}
         >
-          <button onClick={() => changeMonth(-1)} className="button-calender">
-            &lt; Prev
+          <button
+            onClick={() => changeMonth(-1)}
+            className="set-button"
+            style={{ cursor: "pointer" }}
+          >
+            Prev
           </button>
-          <h3 className="dates">
+          <h3 className="months">
             {MONTHS[month]} {year}
           </h3>
-          <button onClick={() => changeMonth(1)} className="button-calender">
-            Next &gt;
+          <button
+            className="set-button"
+            style={{ cursor: "pointer" }}
+            onClick={() => changeMonth(1)}
+          >
+            Next
           </button>
         </header>
-
         <div
-          className="calender-grid"
+          className="calendar-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(7, 1fr)",
-            gap: "10px",
+            gap: "5px",
           }}
         >
           {DAYS_OF_WEEK.map((day) => (
             <div
+              key={day}
               style={{
-                color: "black",
                 fontFamily: "sans-serif",
                 fontWeight: "bold",
                 textAlign: "center",
+                marginTop: "15px",
+                marginBottom: "15px",
               }}
             >
               {day}
@@ -82,11 +92,13 @@ const Calendar = () => {
               new Date(year, month, dayNumber).toDateString();
             return (
               <div
-                className="day-number"
                 key={dayNumber}
                 style={{
-                  backgroundColor: isToday ? "rgb(141, 5, 5)" : "#f9f9f9",
+                  padding: "10px",
+                  textAlign: "center",
+                  backgroundColor: isToday ? "rgb(99, 2, 2)" : "#f9f9f9",
                   color: isToday ? "white" : "black",
+                  borderRadius: "4px",
                 }}
               >
                 {dayNumber}

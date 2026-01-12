@@ -25,3 +25,16 @@
   background-color: rgb(236, 233, 233);
   padding: 10px;
 }
+
+.months {
+  font-family: sans-serif;
+  font-size: 24px;
+  color: rgb(99, 2, 2);
+}
+
+.header-calender {
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(99, 2, 2);
+  font-family: sans-serif;
+}
