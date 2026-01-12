@@ -10,6 +10,8 @@ import EnterKeyInput from "./components/keyDetection";
 import PersistentCounter from "./components/LocalStorageCounter";
 import ProgressBar from "./components/Progressbar";
 import ShoppingCart from "./components/ShoppingCart";
+import Calculator from "./components/Calculator";
+import SnapPhotos from "./pages/snapPhotos";
 
 import "./App.css";
 
@@ -35,6 +37,8 @@ const App: React.FC = () => {
       <PersistentCounter />
       <ShoppingCart />
       <Calendar />
+      <Calculator />
+      <SnapPhotos />
     </div>
   );
 };
