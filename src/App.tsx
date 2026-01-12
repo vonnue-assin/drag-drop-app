@@ -1,14 +1,15 @@
 import React from "react";
 import { ToastContainer } from "react-toastify";
 
+import Calendar from "./components/Calender";
 import FormExample from "./components/DefaultBehaviour";
 import DragDropList from "./components/DragAndDrop";
+import EventBubblingDemo from "./components/EventBubblingDemo";
 import DynamicList from "./components/EventDelegation";
 import EnterKeyInput from "./components/keyDetection";
 import PersistentCounter from "./components/LocalStorageCounter";
 import ProgressBar from "./components/Progressbar";
 import ShoppingCart from "./components/ShoppingCart";
-import EventBubblingDemo from "./components/EventBubblingDemo";
 
 import "./App.css";
 
@@ -33,6 +34,7 @@ const App: React.FC = () => {
       <FormExample />
       <PersistentCounter />
       <ShoppingCart />
+      <Calendar />
     </div>
   );
 };

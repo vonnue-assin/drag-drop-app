@@ -1,0 +1,27 @@
+.button-calender {
+  border: none;
+  background-color: rgb(141, 5, 5);
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dates {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.calender-grid {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.day-number {
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(236, 233, 233);
+  padding: 10px;
+}
