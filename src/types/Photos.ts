@@ -1,4 +1,4 @@
-export type NowShowingTVShow = {
+export type NowShowingMovies = {
   id: number;
   backdrop_path: string;
   poster_path: string;
@@ -14,7 +14,7 @@ export type NowShowingTVShow = {
 };
 
 export type NowPlayingPhotosResponse = {
-  results: NowShowingTVShow[];
+  results: NowShowingMovies[];
   page: number;
   total_pages: number;
   total_results: number;

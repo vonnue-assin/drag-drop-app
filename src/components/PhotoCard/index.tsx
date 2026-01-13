@@ -1,10 +1,10 @@
 import { POSTER_BASE_URL } from "../../constants/photos";
-import { NowShowingTVShow } from "../../types/Photos";
+import { NowShowingMovies } from "../../types/Photos";
 
 import "./styles.css";
 
 type Props = {
-  photo: NowShowingTVShow;
+  photo: NowShowingMovies;
 };
 
 const PhotoCard = ({ photo }: Props) => {

@@ -1,10 +1,10 @@
-import { NowShowingTVShow } from "../../types/Photos";
+import { NowShowingMovies } from "../../types/Photos";
 import PhotoCard from "../PhotoCard";
 
 import "./styles.css";
 
 type Props = {
-  photos: NowShowingTVShow[];
+  photos: NowShowingMovies[];
 };
 
 const PhotoGrid = ({ photos }: Props) => {

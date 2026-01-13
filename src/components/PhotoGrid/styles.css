@@ -17,14 +17,29 @@
 .photo-container {
   max-width: 100%;
   margin: 0 auto;
-
   overflow-x: auto;
   overflow-y: hidden;
-
   box-sizing: border-box;
 }
 
 .photo-card {
   flex: 0 0 auto;
-  width: 200px;
+  width: 190px;
 }
+
+/* 
+The Expense Tracker is a practical project that involves building a web application for tracking expenses. It allows users to input and categorize expenses, view spending trends, and generate reports. You will learn how to manage state, work with forms, and implement data visualization after doing this project. */
+
+/* 
+src/
+│── components/
+│   ├── ExpenseForm.tsx
+│   ├── ExpenseList.tsx
+│   ├── ExpenseItem.tsx
+│   ├── ExpenseChart.tsx
+│
+│── types/
+│   └── expense.ts
+│
+│── App.tsx
+│── styles.css */

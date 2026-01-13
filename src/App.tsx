@@ -12,6 +12,7 @@ import ProgressBar from "./components/Progressbar";
 import ShoppingCart from "./components/ShoppingCart";
 import Calculator from "./components/Calculator";
 import SnapPhotos from "./pages/snapPhotos";
+import ExpenseShow from "./pages/ExpenseShow";
 
 import "./App.css";
 
@@ -39,6 +40,7 @@ const App: React.FC = () => {
       <Calendar />
       <Calculator />
       <SnapPhotos />
+      <ExpenseShow />
     </div>
   );
 };
