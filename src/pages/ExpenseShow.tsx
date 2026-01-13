@@ -20,16 +20,16 @@ const ExpenseShow = () => {
 
   return (
     <div className="container">
-      <h1>💰 Expense Tracker</h1>
+      <h1 className="expense">💰 Expense Tracker</h1>
 
       <ExpenseForm onAddExpense={addExpenseHandler} />
 
-      <select onChange={(e) => setFilter(e.target.value)}>
-        <option>All</option>
-        <option>Food</option>
-        <option>Travel</option>
-        <option>Shopping</option>
-        <option>Bills</option>
+      <select onChange={(e) => setFilter(e.target.value)} className="select">
+        <option className="option">All</option>
+        <option className="option">Food</option>
+        <option className="option">Travel</option>
+        <option className="option">Shopping</option>
+        <option className="option">Bills</option>
       </select>
 
       <ExpenseChart expenses={filteredExpenses} />

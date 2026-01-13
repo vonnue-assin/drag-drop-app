@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Expense } from "../../types/Expense";
 
+import "./styles.css";
+
 type Props = {
   onAddExpense: (expense: Expense) => void;
 };
@@ -27,19 +29,21 @@ const ExpenseForm = ({ onAddExpense }: Props) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className="submit-form">
       <input
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title"
+        className="form"
       />
       <input
         type="number"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
         placeholder="Amount"
+        className="form"
       />
-      <button type="submit">Add Expense</button>
+      <button type="submit" className="add-expense">Add Expense</button>
     </form>
   );
 };

@@ -28,3 +28,22 @@
   background: #4caf50;
   border-radius: 6px;
 }
+
+/* Expense Tracker */
+
+.expense {
+  font-family: sans-serif;
+  color: rgb(2, 2, 90);
+}
+
+.select {
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.option {
+  cursor: pointer;
+}

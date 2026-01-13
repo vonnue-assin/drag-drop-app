@@ -1,5 +1,7 @@
 import { Expense } from "../../types/Expense";
 
+import "./styles.css";
+
 type Props = {
   expenses: Expense[];
 };
@@ -7,8 +9,8 @@ type Props = {
 const ExpenseChart = ({ expenses }: Props) => {
   const total = expenses.reduce((sum, e) => sum + e.amount, 0);
   return (
-    <div>
-      <h3>Total Spent: {total}</h3>
+    <div className="total">
+      <h3 className="spent">Total Spent: {total}</h3>
       <div className="chart-bar">
         <div
           className="chart-fill"
